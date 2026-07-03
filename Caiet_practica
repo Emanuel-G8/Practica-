@@ -1,0 +1,81 @@
+-- Ce va fi scris pe caiet --
+
+  Ziua 1 , 15.06.2026 Luni
+  Prezentarea la sediul firmei , semnarea documentelor si discutarea obiectivelor cu tutorele de practica
+
+Ziua 2 , 16.06.2026 Marti
+Am configurat mediul de lucru recomadat de tutore, am instalat LÖVE2D.
+  Am instalat extensia de Lua pentru VSCode, pentru autocompletare și verificarea erorilor de sintaxă, și am testat o rulare minimă în LÖVE2D
+, pentru a confirma că totul este instalat și legat corect înainte să încep un proiect concret.
+
+  
+Ziua 3, 17.06.2026 Miercuri
+   Am concretizat cu ajutorul tutorelui proiectul la care voi lucra: o hartă izometrică realizată în LÖVE2D,cu un player , folosind biblioteca open-source isomap-love2d găsită pe GitHub.
+Am descărcat arhiva ZIP de pe repository-ul Sulunia/isomap-love2d, structură pe care am notat-o ca punct de plecare pentru zilele următoare.
+
+  ziua 4 , 18.06.2026 joi
+am creat structura de foldere necesară . Am testat rularea proiectului gol, doar cu harta de exemplu,
+pentru a mă asigura că totul este legat corect înainte să încep să adaug funcționalitate proprie.
+   
+  ziua 5 , 19.06.2026 vineri
+  M-am concentrat pe înțelegerea randării izometrice: biblioteca folosește funcțiile toIso și toCartesian pentru a transforma coordonatele
+unei dale din grilă (rânduri și coloane) în coordonate de ecran și invers, transformare care dă senzația de perspectivă izometrică specifică
+jocurilor RPG clasice. 
+  
+
+  Ziua 6 , 22.06.2026 luni
+  Am observat și mecanismul de tip z-buffer folosit pentru ordinea de desenare: fiecare obiect are o valoare de adâncime calculată din 
+poziția pe grilă, iar obiectele sunt sortate și desenate de la cele mai îndepărtate către cele mai apropiate de cameră.
+
+  Ziua 7 , 23.06.2026 marti 
+  Am început implementarea personajului jucabil, descoperind funcția insertNewObject din isomap.lua, care permite adăugarea unui obiect
+dinamic direct în lista de obiecte a hărții, inclus automat în calculul de adâncime (z-buffer) alături de obiectele statice.
+  Am observat o particularitate a acestei funcții — argumentele de poziție sunt inversate intern față de modul în care sunt stocate
+obiectele statice — și am documentat-o atent în cod pentru a evita confuzii ulterioare.
+
+Ziua 8 , 24.06.2026 miercuri
+Am început implementarea personajului jucabil, descoperind funcția insertNewObject din isomap.lua, care permite adăugarea unui obiect 
+dinamic direct în lista de obiecte a hărții, inclus automat în calculul de adâncime (z-buffer) alături de obiectele statice. 
+  
+
+Ziua 9 , 25.06.2026 joi 
+Am implementat mișcarea personajului cu tastatura, folosind o poziție zecimală pentru deplasare fluidă între dale.
+  Poziția se actualizează în fiecare cadru, iar personajul apare corect în raport cu terenul.
+
+  Ziua 10 , 26.06.2026 vineri
+Am adăugat o cameră care urmărește automat personajul, înlocuind deplasarea manuală din demo.
+Camera folosește aceeași transformare izometrică pentru a rămâne centrată pe personaj.
+  
+  Ziua 11 , 29.06.2026 luni
+  Am facut o revizie la sediu ,si brainstorm in legatura cu domeniul jocurilor.
+  Am întâmpinat o problemă la adăugarea imaginii personajului, aceasta fiind prea mare față de teren.
+ Am aflat că imaginile trebuie redimensionate manual pentru a se potrivi corect.
+
+Ziua 12 , 30.06.2026 marti
+Am descoperit o problemă la marginile hărții, personajul comportându-se diferit pe stânga față de dreapta.
+  Am corectat-o direct în cod, inversând valorile funcțiilor implicate.
+
+  Ziua 13 , 1.07.2026 miercuri
+Am desenat opt ilustrații pentru personaj, câte una pentru fiecare direcție.
+  Le-am integrat în joc și am ajustat logica pentru schimbarea automată a texturii la mișcare.
+
+  Ziua 14 , 2.07.2026 joi
+  Am adăugat detecția de coliziune între personaj și copaci, folosind cercuri simple în jurul obiectelor.
+
+  Ziua 15 , 3.07.2026 vineri
+  Am încărcat proiectul pe GitHub, organizând fișierele și adăugând un fișier README cu o scurtă descriere a 
+jocului și a funcționalităților implementate până acum.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
