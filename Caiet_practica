@@ -4,23 +4,20 @@
   Prezentarea la sediul firmei , semnarea documentelor si discutarea obiectivelor cu tutorele de practica
 
 Ziua 2 , 16.06.2026 Marti
-Am configurat mediul de lucru recomadat de tutore, am instalat LÖVE2D.
-  Am instalat extensia de Lua pentru VSCode, pentru autocompletare și verificarea erorilor de sintaxă, și am testat o rulare minimă în LÖVE2D
+Am configurat mediul de lucru recomadat de tutore, am instalat LÖVE2D si extensia de Lua pentru VSCode, pentru autocompletareși verificarea erorilor de sintaxă, și am testat o rulare minimă în LÖVE2D
 , pentru a confirma că totul este instalat și legat corect înainte să încep un proiect concret.
-
   
 Ziua 3, 17.06.2026 Miercuri
    Am concretizat cu ajutorul tutorelui proiectul la care voi lucra: o hartă izometrică realizată în LÖVE2D,cu un player , folosind biblioteca open-source isomap-love2d găsită pe GitHub.
 Am descărcat arhiva ZIP de pe repository-ul Sulunia/isomap-love2d, structură pe care am notat-o ca punct de plecare pentru zilele următoare.
 
   ziua 4 , 18.06.2026 joi
-am creat structura de foldere necesară . Am testat rularea proiectului gol, doar cu harta de exemplu,
+Am creat structura de foldere necesară . Am testat rularea proiectului gol, doar cu harta de exemplu,
 pentru a mă asigura că totul este legat corect înainte să încep să adaug funcționalitate proprie.
    
   ziua 5 , 19.06.2026 vineri
   M-am concentrat pe înțelegerea randării izometrice: biblioteca folosește funcțiile toIso și toCartesian pentru a transforma coordonatele
-unei dale din grilă (rânduri și coloane) în coordonate de ecran și invers, transformare care dă senzația de perspectivă izometrică specifică
-jocurilor RPG clasice. 
+unei dale din grilă în coordonate de ecran și invers, transformare care dă senzația de perspectivă izometrică specifică jocurilor RPG clasice. 
   
 
   Ziua 6 , 22.06.2026 luni
@@ -30,14 +27,10 @@ poziția pe grilă, iar obiectele sunt sortate și desenate de la cele mai înde
   Ziua 7 , 23.06.2026 marti 
   Am început implementarea personajului jucabil, descoperind funcția insertNewObject din isomap.lua, care permite adăugarea unui obiect
 dinamic direct în lista de obiecte a hărții, inclus automat în calculul de adâncime (z-buffer) alături de obiectele statice.
-  Am observat o particularitate a acestei funcții — argumentele de poziție sunt inversate intern față de modul în care sunt stocate
-obiectele statice — și am documentat-o atent în cod pentru a evita confuzii ulterioare.
 
 Ziua 8 , 24.06.2026 miercuri
-Am început implementarea personajului jucabil, descoperind funcția insertNewObject din isomap.lua, care permite adăugarea unui obiect 
-dinamic direct în lista de obiecte a hărții, inclus automat în calculul de adâncime (z-buffer) alături de obiectele statice. 
+Am continuat cu teste .
   
-
 Ziua 9 , 25.06.2026 joi 
 Am implementat mișcarea personajului cu tastatura, folosind o poziție zecimală pentru deplasare fluidă între dale.
   Poziția se actualizează în fiecare cadru, iar personajul apare corect în raport cu terenul.
