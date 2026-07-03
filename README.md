@@ -10,7 +10,7 @@ Proiectul este in faza de prototip și pune bazele unui motor de randare izometr
 
 Harta este construită dintr-o grilă de tile-uri pătrate, care sunt "rotite" matematic pentru a crea iluzia de perspectivă izometrică (imaginea de mai jos e generată direct din asset-urile jocului, ca exemplu):
 
-
+![Preview](screenshot.png)
  
 | Pas | Ce se întâmplă |
 |:---:|---|
